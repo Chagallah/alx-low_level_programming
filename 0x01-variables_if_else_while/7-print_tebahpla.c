@@ -1,17 +1,17 @@
-#include <stdio.h>
+#include<stdio.h>
+
 /**
- * main - Entry point
- * Description - Alphabet in reverse
- * Return: 0 success
+ * main - entry point
+ *
+ * Return: only zero
  */
 int main(void)
 {
-	char a = 'z';
-	
-	while (a >= 'a')
+	char ch;
+
+	for (ch = 'z'; ch >= 'a'; ch--)
 	{
-		putchar(a);
-		a--;
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);
