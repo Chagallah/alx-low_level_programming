@@ -1,19 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
- * main - main block
- * Description: prints all single digits of base 10 starting from 0
- * followed by a new line
- * Return: 0
+ * main - Entry point
+ * Description: Prints all digits of base 10 starting from 0
+ * followe by a new line
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	int n = 0;
-	
-	while (n <= 9)
+	int num;
+
+	for (num = 0; num < 10; num++)
 	{
-		printf("%d", n);
-		n++;
+		printf("%d", num);
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
