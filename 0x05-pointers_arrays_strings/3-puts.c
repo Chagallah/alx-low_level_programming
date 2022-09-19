@@ -5,7 +5,7 @@
  * _puts - prints a string
  * @str: pointer to the string to print
  */
-
+int _putchar()
 void _puts(char *str)
 {
 	int c = 0;
