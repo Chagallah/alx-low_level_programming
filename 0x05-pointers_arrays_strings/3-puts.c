@@ -6,7 +6,7 @@
  * _putchar - prints the output
  * @str: pointer to the string to print
  */
-void _putchar();
+void _putchar(char);
 void _puts(char *str)
 {
 	int c = 0;
