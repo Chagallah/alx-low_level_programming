@@ -3,9 +3,10 @@
 
 /**
  * _puts - prints a string
+ * _putchar - prints the output
  * @str: pointer to the string to print
  */
-int _putchar();
+int _putchar(void);
 void _puts(char *str)
 {
 	int c = 0;
