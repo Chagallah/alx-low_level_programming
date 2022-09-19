@@ -3,11 +3,8 @@
 
 /**
  * _puts - prints a string
- * _putchar - prints the output
- * char character parameter
  * @str: pointer to the string to print
  */
-void _putchar(char);
 void _puts(char *str)
 {
 	int c = 0;
