@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-int main(vod)
+int main(void)
 {
 	int i, sum, n;
 	int pass[100];
