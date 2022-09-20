@@ -4,6 +4,7 @@
 /**
  * _puts - prints a string
  * @str: pointer to the string to print
+ * char - character parameter
  */
 void _puts(char *str)
 {
