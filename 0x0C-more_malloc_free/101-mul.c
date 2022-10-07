@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 /**
  * _memset - fills memory with a constant byte
@@ -65,8 +66,8 @@ void multiply(char *s1, char *s2)
 	char *ptr;
 	void *temp;
 
-	l1 = _length(s1);
-	l2 = _length(s2);
+	l1 = strlen(s1);
+	l2 = strlen(s2);
 	tmp = l2;
 	total_l = l1 + l2;
 	ptr = _calloc(sizeof(int), total_l);
@@ -121,7 +122,7 @@ int main(int argc, char *argv[])
 	char *n1 = argv[1];
 	char *n2 = argv[2];
 
-	if (argc != 3 || check_number(n1) || check_number(n2))
+	if (argc != 3 || is_digit(n1) || is_digit(n2))
 		error_exit();
 
 	if (*n1 == '0' || *n2 == '0')
