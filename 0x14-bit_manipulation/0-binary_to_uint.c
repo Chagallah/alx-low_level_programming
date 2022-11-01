@@ -5,12 +5,12 @@
 
 /**
  * function that converts a binary number to an unsigned int
- * @B
+ * @b
  *
  * Return: converted number or 0
  */
 
-int _pow(int x, int y)
+int _pow(int x,int y)
 {
 	if(y < 0)
 	{
@@ -39,7 +39,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 
 	n = strlen(b) - 1;
-	fro (x = 0, i = 0; n >=x; n--)
+	for (x = 0, i = 0; n >=x; n--)
 	{
 		switch (b[i])
 		{
