@@ -1,0 +1,6 @@
+#This is the target that compiles our executable
+CC = gcc
+src = main.c school.c
+
+all: $(SRC)
+    $(CC) -o school $(SRC)

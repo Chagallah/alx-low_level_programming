@@ -1,0 +1,14 @@
+# Sets cc to gcc - compiler to be used
+CC = gcc
+
+# Specifies which file to compile
+SRC = main.c school.c
+OBJ = $(SRC:.c = .o)
+
+NAME = school
+
+all: $(NAME)
+
+# Specifies that the object files should be linked with compiler to create executable
+$(NAME): $(OBJ)
+    $(CC) -o $(NAME) $(OBJ)
